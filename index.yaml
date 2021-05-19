@@ -2,14 +2,14 @@ apiVersion: v1
 entries:
   external-service:
   - apiVersion: v1
-    created: "2021-05-19T13:37:46.354232-07:00"
+    created: "2021-05-19T15:47:19.361928-07:00"
     description: Generalized chart to expose an external web service
-    digest: a0bf309942abe29c48796388f8231657636ce5c06904bb1a6e3d24ac6847930c
+    digest: 684ad1cf471d87abd2a8db7ccae736aeba80cd1a08c7106e556560a487a73e4b
     maintainers:
     - email: timfpark@gmail.com
       name: timfpark
     name: external-service
     urls:
-    - https://timfpark.github.io/helm-repo/external-service/external-service-1.0.0.tgz
+    - https://timfpark.github.io/helm-repo/dist/external-service-1.0.0.tgz
     version: 1.0.0
-generated: "2021-05-19T13:37:46.352147-07:00"
+generated: "2021-05-19T15:47:19.361085-07:00"

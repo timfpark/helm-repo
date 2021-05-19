@@ -1,0 +1,11 @@
+apiVersion: linkerd.io/v1alpha2
+kind: ServiceProfile
+metadata:
+  name: {{ .Values.service.name }}.svc.cluster.local
+spec:
+  routes:
+  - condition:
+      method: GET
+      pathRegex: /*
+    isRetryable: true
+    name: GET /*

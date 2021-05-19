@@ -1,0 +1,3 @@
+#!/bin/bash
+helm package src/* -d dist
+helm repo index --url https://timfpark.github.io/helm-repo/ .

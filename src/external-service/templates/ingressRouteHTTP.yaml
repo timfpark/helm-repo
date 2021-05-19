@@ -1,0 +1,15 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: {{ .Values.service.name }}-http
+  annotations:
+    ingress.kubernetes.io/custom-request-headers: l5d-dst-override:{{ .Values.service.name }}.default.svc.cluster.local:80
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: 'Host(`{{ .Values.service.dns }}`)'
+      services:
+        - name: {{ .Values.service.name }}
+          port: {{ .Values.service.port }}

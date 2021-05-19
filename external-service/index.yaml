@@ -10,6 +10,6 @@ entries:
       name: timfpark
     name: external-service
     urls:
-    - https://timfpark.github.io/helm-repo/external-service-1.0.0.tgz
+    - https://timfpark.github.io/helm-repo/external-service/external-service-1.0.0.tgz
     version: 1.0.0
 generated: "2021-05-19T13:37:46.352147-07:00"

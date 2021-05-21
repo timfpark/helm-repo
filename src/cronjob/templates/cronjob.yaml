@@ -1,0 +1,36 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: {{ .Values.service.name }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Values.service.name }}
+spec:
+  schedule: "50 0 * * *"
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: {{ .Values.service.name }}
+        spec:
+          containers:
+          - name: {{ .Values.service.name }}
+            image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+            imagePullPolicy: "Always"
+            resources:
+              requests:
+                cpu: {{ .Values.resources.requests.cpu }}
+                memory: {{ .Values.resources.requests.memory }}
+              limits:
+                cpu: {{ .Values.resources.limits.cpu }}
+                memory: {{ .Values.resources.limits.memory }}
+            ports:
+            - containerPort: {{ .Values.port }}
+              protocol: TCP
+{{ if .Values.configMap }}
+            envFrom:
+              - configMapRef:
+                  name: {{ .Values.service.name }}-configmap
+{{ end }}
+          restartPolicy: OnFailure

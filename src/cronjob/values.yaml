@@ -4,6 +4,8 @@ service:
     name: "my-service"
     port: 80
 
+port: 80
+
 image:
     tag: latest
     repository: myrepo.acr.io

@@ -1,6 +1,6 @@
 name: internal-service
 description: Generalized chart for an internal web service
-version: 1.0.0
+version: 1.0.1
 maintainers:
     - name: timfpark
       email: timfpark@gmail.com

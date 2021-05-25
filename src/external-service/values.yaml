@@ -12,6 +12,9 @@ image:
 replicas: 1
 port: 80
 
+tls:
+    secret: "tls-secret"
+
 resources:
     requests:
         cpu: "250m"

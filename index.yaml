@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   cronjob:
   - apiVersion: v1
-    created: "2021-06-08T09:38:16.323724-07:00"
+    created: "2021-06-11T10:53:54.661917-07:00"
     description: Generalized chart for an internal cronjob
-    digest: 2104672793afeb8c7e802c7e5baa4fdb81c3d93c649c41f81f944948919e3b7e
+    digest: 3983d9df9314dc277a0f4c5e94030e3a20c4055d940181b2f7990b2697062773
     maintainers:
     - email: timfpark@gmail.com
       name: timfpark
@@ -13,7 +13,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/cronjob-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-06-08T09:38:16.323112-07:00"
+    created: "2021-06-11T10:53:54.661189-07:00"
     description: Generalized chart for an internal cronjob
     digest: 3748fa4057d3219c3a361b4a54e6a11226e04953f0ce690c042465014e8c16e0
     maintainers:
@@ -23,11 +23,23 @@ entries:
     urls:
     - https://timfpark.github.io/helm-repo/dist/cronjob-1.0.0.tgz
     version: 1.0.0
+  daemon:
+  - apiVersion: v1
+    created: "2021-06-11T10:53:54.663164-07:00"
+    description: Generalized chart for a daemon
+    digest: c90a5565ac1912a73b1ba4bf1dd40673d633e4ff0ddfe121792080f6107180c1
+    maintainers:
+    - email: timfpark@gmail.com
+      name: timfpark
+    name: daemon
+    urls:
+    - https://timfpark.github.io/helm-repo/dist/daemon-1.0.0.tgz
+    version: 1.0.0
   external-service:
   - apiVersion: v1
-    created: "2021-06-08T09:38:16.33076-07:00"
+    created: "2021-06-11T10:53:54.664933-07:00"
     description: Generalized chart to expose an external web service
-    digest: 879b1ad36c900082c835ad9887dc6a85f34dad9f6fa57a55f760414030d109e5
+    digest: b202cfd9d15ce952282cad071d9aec988ad9533c7583630201b874aef0a943d4
     maintainers:
     - email: timfpark@gmail.com
       name: timfpark
@@ -36,7 +48,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.3.tgz
     version: 1.0.3
   - apiVersion: v1
-    created: "2021-06-08T09:38:16.330193-07:00"
+    created: "2021-06-11T10:53:54.664357-07:00"
     description: Generalized chart to expose an external web service
     digest: 7ae73ec22bfa8cc6666dd9ab97c9f3dfffc014297f4d517c237368fb9e80273f
     maintainers:
@@ -47,7 +59,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v1
-    created: "2021-06-08T09:38:16.328058-07:00"
+    created: "2021-06-11T10:53:54.663998-07:00"
     description: Generalized chart to expose an external web service
     digest: 293b4a0be9caec4c7324dbe6a444e2d106883cf971e8469ea7b5b9eb7226c31c
     maintainers:
@@ -58,7 +70,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-06-08T09:38:16.325681-07:00"
+    created: "2021-06-11T10:53:54.663608-07:00"
     description: Generalized chart to expose an external web service
     digest: 7e55a436a502d1124ebc36392e52a50f292c7431a88f0101eb4716989c0f541c
     maintainers:
@@ -70,9 +82,9 @@ entries:
     version: 1.0.0
   internal-service:
   - apiVersion: v1
-    created: "2021-06-08T09:38:16.333236-07:00"
+    created: "2021-06-11T10:53:54.665795-07:00"
     description: Generalized chart for an internal web service
-    digest: 0ed16a672b06d3c8be154c4346330a8eddafa654f5d4dd23f81b44b0ae776c0e
+    digest: 8cb8628967a5f0e96471026e04640373a393f36d2f68569a3449830b4be30721
     maintainers:
     - email: timfpark@gmail.com
       name: timfpark
@@ -81,7 +93,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/internal-service-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-06-08T09:38:16.332732-07:00"
+    created: "2021-06-11T10:53:54.665235-07:00"
     description: Generalized chart for an internal web service
     digest: 893f6c208181027c47ed223486d9ed00536ba03fdf12560035ce3ae41a913cac
     maintainers:
@@ -91,4 +103,4 @@ entries:
     urls:
     - https://timfpark.github.io/helm-repo/dist/internal-service-1.0.0.tgz
     version: 1.0.0
-generated: "2021-06-08T09:38:16.320335-07:00"
+generated: "2021-06-11T10:53:54.660647-07:00"

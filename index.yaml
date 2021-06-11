@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   cronjob:
   - apiVersion: v1
-    created: "2021-06-11T10:53:54.661917-07:00"
+    created: "2021-06-11T16:10:19.888342-07:00"
     description: Generalized chart for an internal cronjob
-    digest: 3983d9df9314dc277a0f4c5e94030e3a20c4055d940181b2f7990b2697062773
+    digest: 14e2b840dec6fe99374ad4c0f949faecc038adc276ee0ac87bee6648b0de7cf0
     maintainers:
     - email: timfpark@gmail.com
       name: timfpark
@@ -13,7 +13,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/cronjob-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-06-11T10:53:54.661189-07:00"
+    created: "2021-06-11T16:10:19.887101-07:00"
     description: Generalized chart for an internal cronjob
     digest: 3748fa4057d3219c3a361b4a54e6a11226e04953f0ce690c042465014e8c16e0
     maintainers:
@@ -25,7 +25,18 @@ entries:
     version: 1.0.0
   daemon:
   - apiVersion: v1
-    created: "2021-06-11T10:53:54.663164-07:00"
+    created: "2021-06-11T16:10:19.895068-07:00"
+    description: Generalized chart for a daemon
+    digest: 9b8b2d69c98ecb83db7eba9416653b6fb1731b93b71d7ad8e93c83650cdb433e
+    maintainers:
+    - email: timfpark@gmail.com
+      name: timfpark
+    name: daemon
+    urls:
+    - https://timfpark.github.io/helm-repo/dist/daemon-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v1
+    created: "2021-06-11T16:10:19.894531-07:00"
     description: Generalized chart for a daemon
     digest: c90a5565ac1912a73b1ba4bf1dd40673d633e4ff0ddfe121792080f6107180c1
     maintainers:
@@ -37,9 +48,9 @@ entries:
     version: 1.0.0
   external-service:
   - apiVersion: v1
-    created: "2021-06-11T10:53:54.664933-07:00"
+    created: "2021-06-11T16:10:19.902538-07:00"
     description: Generalized chart to expose an external web service
-    digest: b202cfd9d15ce952282cad071d9aec988ad9533c7583630201b874aef0a943d4
+    digest: d213e4e5e0b50f930cd5cb1deba82561f47bf9fd8c1099af70f7ad5455b03123
     maintainers:
     - email: timfpark@gmail.com
       name: timfpark
@@ -48,7 +59,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.3.tgz
     version: 1.0.3
   - apiVersion: v1
-    created: "2021-06-11T10:53:54.664357-07:00"
+    created: "2021-06-11T16:10:19.901995-07:00"
     description: Generalized chart to expose an external web service
     digest: 7ae73ec22bfa8cc6666dd9ab97c9f3dfffc014297f4d517c237368fb9e80273f
     maintainers:
@@ -59,7 +70,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v1
-    created: "2021-06-11T10:53:54.663998-07:00"
+    created: "2021-06-11T16:10:19.899978-07:00"
     description: Generalized chart to expose an external web service
     digest: 293b4a0be9caec4c7324dbe6a444e2d106883cf971e8469ea7b5b9eb7226c31c
     maintainers:
@@ -70,7 +81,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-06-11T10:53:54.663608-07:00"
+    created: "2021-06-11T16:10:19.897314-07:00"
     description: Generalized chart to expose an external web service
     digest: 7e55a436a502d1124ebc36392e52a50f292c7431a88f0101eb4716989c0f541c
     maintainers:
@@ -82,9 +93,9 @@ entries:
     version: 1.0.0
   internal-service:
   - apiVersion: v1
-    created: "2021-06-11T10:53:54.665795-07:00"
+    created: "2021-06-11T16:10:19.905015-07:00"
     description: Generalized chart for an internal web service
-    digest: 8cb8628967a5f0e96471026e04640373a393f36d2f68569a3449830b4be30721
+    digest: ea4d2102865a2757b94fb7b891ab8184d5bf2e20cdd8485005bbebe18859cd16
     maintainers:
     - email: timfpark@gmail.com
       name: timfpark
@@ -93,7 +104,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/internal-service-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-06-11T10:53:54.665235-07:00"
+    created: "2021-06-11T16:10:19.904489-07:00"
     description: Generalized chart for an internal web service
     digest: 893f6c208181027c47ed223486d9ed00536ba03fdf12560035ce3ae41a913cac
     maintainers:
@@ -103,4 +114,4 @@ entries:
     urls:
     - https://timfpark.github.io/helm-repo/dist/internal-service-1.0.0.tgz
     version: 1.0.0
-generated: "2021-06-11T10:53:54.660647-07:00"
+generated: "2021-06-11T16:10:19.8846-07:00"

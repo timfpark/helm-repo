@@ -19,6 +19,8 @@ spec:
       labels:
         app: {{ .Values.daemon.name }}
     spec:
+      imagePullSecrets:
+        - name: {{ .Values.image.pullSecret }}
       containers:
       - name: {{ .Values.daemon.name }}
         image: {{ .Values.image.repository }}:{{ .Values.image.tag }}

@@ -4,6 +4,7 @@ daemon:
 image:
     tag: latest
     repository: myrepo.acr.io
+    pullSecret: my-secret
 
 replicas: 1
 

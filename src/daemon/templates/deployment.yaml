@@ -16,6 +16,10 @@ spec:
     metadata:
       annotations:
         linkerd.io/inject: enabled
+        dapr.io/enabled: "true"
+        dapr.io/app-id: {{ .Values.daemon.name }}
+        dapr.io/app-port: "3000"
+        dapr.io/config: "tracing"
       labels:
         app: {{ .Values.daemon.name }}
     spec:

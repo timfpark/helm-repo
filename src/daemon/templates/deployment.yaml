@@ -36,3 +36,7 @@ spec:
         envFrom:
           - configMapRef:
                name: {{ .Values.daemon.name }}-configmap
+{{ if .Values.nodeName }}
+      nodeSelector:
+          kubernetes.io/hostname: {{ .Values.nodeName }}
+{{ end }}

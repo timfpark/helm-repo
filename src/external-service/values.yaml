@@ -9,6 +9,8 @@ image:
     tag: latest
     repository: myrepo.acr.io
 
+imagePullSecret: "my-pull-secret"
+
 replicas: 1
 port: 80
 

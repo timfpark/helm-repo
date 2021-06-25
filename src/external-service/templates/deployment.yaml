@@ -41,3 +41,7 @@ spec:
         envFrom:
           - configMapRef:
                name: {{ .Values.service.name }}-configmap
+{{ if .Values.imagePullSecret }}
+      imagePullSecrets:
+      - name: {{ .Values.imagePullSecret }}
+{{ end }}

@@ -17,6 +17,9 @@ port: 80
 tls:
     secret: "tls-secret"
 
+environment:
+    PORT: 80
+
 resources:
     requests:
         cpu: "250m"

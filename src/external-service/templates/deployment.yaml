@@ -40,7 +40,7 @@ spec:
           protocol: TCP
         envFrom:
           - configMapRef:
-               name: {{ .Values.service.name }}-configmap
+               name: {{ .Values.service.name }}
 {{ if .Values.imagePullSecret }}
       imagePullSecrets:
       - name: {{ .Values.imagePullSecret }}

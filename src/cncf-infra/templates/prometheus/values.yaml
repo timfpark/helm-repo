@@ -1,0 +1,9 @@
+adminUser: "{{.Values.prometheus.adminUser}}"
+alertmanager:
+    persistentVolume:
+        storageClass: "{{.Values.prometheus.storageClass}}"
+server:
+    global:
+        scrape_interval: 10s
+    persistentVolume:
+        storageClass": "{{.Values.prometheus.storageClass}}"

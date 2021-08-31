@@ -1,0 +1,9 @@
+apiVersion: v1
+data:
+    ca.crt: {{.Values.linkerd.caCrt}}
+    issuer.crt: {{ .Values.linkerd.issuerCrt }}
+    issuer.key: {{ .Values.linkerd.issuerKey }}
+kind: Secret
+metadata:
+    name: linkerd-certs
+    namespace: linkerd

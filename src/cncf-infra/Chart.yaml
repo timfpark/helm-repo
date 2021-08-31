@@ -1,0 +1,6 @@
+name: cncf-infra
+description: CNCF infrastructure stack
+version: 1.0.0
+maintainers:
+    - name: timfpark
+      email: timfpark@gmail.com

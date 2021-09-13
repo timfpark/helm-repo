@@ -1,0 +1,5 @@
+# required settings
+
+replicas: 3
+postgresql:
+    connectionString: "postgres://<user>:<password>@<host>:5432/vault?sslmode=verify-full"

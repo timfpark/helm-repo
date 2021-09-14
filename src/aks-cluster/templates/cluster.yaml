@@ -1,4 +1,4 @@
-apiVersion: cluster.x-k8s.io/v1alpha3
+apiVersion: cluster.x-k8s.io/v1alpha4
 kind: Cluster
 metadata:
   name: {{ .Values.name }}
@@ -9,15 +9,15 @@ spec:
       - {{ .Values.servicesCidrBlock }}
     serviceDomain: cluster.local  
   controlPlaneRef:
-    apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha3
+    apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha4
     kind: AzureManagedControlPlane
     name: {{ .Values.name }}
   infrastructureRef:
-    apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha3
+    apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha4
     kind: AzureManagedCluster
     name: {{ .Values.name }}
 ---
-apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha3
+apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha4
 kind: AzureManagedControlPlane
 metadata:
   name: {{ .Values.name }}
@@ -37,12 +37,12 @@ spec:
     cidrBlock: 10.0.0.0/8
 
 ---
-apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha3
+apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha4
 kind: AzureManagedCluster
 metadata:
   name: {{ .Values.name }}
 ---
-apiVersion: exp.cluster.x-k8s.io/v1alpha3
+apiVersion: exp.cluster.x-k8s.io/v1alpha4
 kind: MachinePool
 metadata:
   name: {{ .Values.controlAgentPoolName }}
@@ -55,19 +55,19 @@ spec:
         dataSecretName: ""
       clusterName: {{ .Values.name }}
       infrastructureRef:
-        apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha3
+        apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha4
         kind: AzureManagedMachinePool
         name: {{ .Values.controlAgentPoolName }}
       version: {{ .Values.k8sVersion }}
 ---
-apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha3
+apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha4
 kind: AzureManagedMachinePool
 metadata:
   name: {{ .Values.controlAgentPoolName }}
 spec:
   sku: {{ .Values.controlAgentPoolNodeSize }}
 ---
-apiVersion: exp.cluster.x-k8s.io/v1alpha3
+apiVersion: exp.cluster.x-k8s.io/v1alpha4
 kind: MachinePool
 metadata:
   name: {{ .Values.workerAgentPoolName }}
@@ -80,12 +80,12 @@ spec:
         dataSecretName: ""
       clusterName: {{ .Values.name }}
       infrastructureRef:
-        apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha3
+        apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha4
         kind: AzureManagedMachinePool
         name: {{ .Values.workerAgentPoolName }}
       version: {{ .Values.k8sVersion }}
 ---
-apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha3
+apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha4
 kind: AzureManagedMachinePool
 metadata:
   name: {{ .Values.workerAgentPoolName }}

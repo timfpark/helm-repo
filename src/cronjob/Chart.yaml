@@ -1,6 +1,6 @@
 name: cronjob
 description: Generalized chart for an internal cronjob
-version: 1.0.1
+version: 1.0.2
 maintainers:
     - name: timfpark
       email: timfpark@gmail.com

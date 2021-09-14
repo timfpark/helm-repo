@@ -1,6 +1,6 @@
 name: daemon
 description: Generalized chart for a daemon
-version: 1.0.4
+version: 1.0.5
 maintainers:
     - name: timfpark
       email: timfpark@gmail.com

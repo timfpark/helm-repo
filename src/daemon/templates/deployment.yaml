@@ -28,7 +28,7 @@ spec:
       containers:
       - name: {{ .Values.daemon.name }}
         image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-        imagePullPolicy: "Always"
+        imagePullPolicy: "IfNotPresent"
         resources:
           requests:
             cpu: {{ .Values.resources.requests.cpu }}

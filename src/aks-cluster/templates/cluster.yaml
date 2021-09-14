@@ -22,11 +22,7 @@ kind: AzureManagedControlPlane
 metadata:
   name: {{ .Values.name }}
 spec:
-  defaultPoolRef:
-    name: {{ .Values.controlAgentPoolName }}
   location: {{ .Values.location }}
-  resourceGroupName: {{ .Values.clusterResourceGroup }}
-  nodeResourceGroupName: nodepool-{{ .Values.clusterResourceGroup }}
   sshPublicKey: ""
   subscriptionID: {{ .Values.subscriptionId }}
   version: {{ .Values.k8sVersion }} 

@@ -1,8 +1,17 @@
 apiVersion: v1
 entries:
+  aks-cluster:
+  - apiVersion: v2
+    created: "2021-09-14T11:01:55.922799-07:00"
+    description: A Helm chart for AKS Cluster
+    digest: 7a6a6c923e7a546e9b341ca83cbe3e3375d2268f64a0c07981f0d32065ebe7c2
+    name: aks-cluster
+    urls:
+    - https://timfpark.github.io/helm-repo/dist/aks-cluster-0.0.7.tgz
+    version: 0.0.7
   cncf-infra:
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.071999-07:00"
+    created: "2021-09-14T11:01:55.9234-07:00"
     description: CNCF infrastructure stack
     digest: 505ca0436debadfe7f08044defc2234485dc9c7410f1bb70db12a796ec57f0ab
     maintainers:
@@ -14,9 +23,9 @@ entries:
     version: 1.0.0
   cronjob:
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.075766-07:00"
+    created: "2021-09-14T11:01:55.924267-07:00"
     description: Generalized chart for an internal cronjob
-    digest: 8e8e08a1b525b1bed6cca1e45db194db1dc670a6d5ed09907dba779bd923cd64
+    digest: f3d98cedc0b61dc050591cd916c9eda3b2a9b825aa388558869a4ed16799475f
     maintainers:
     - email: timfpark@gmail.com
       name: timfpark
@@ -25,7 +34,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/cronjob-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.075198-07:00"
+    created: "2021-09-14T11:01:55.923706-07:00"
     description: Generalized chart for an internal cronjob
     digest: 3748fa4057d3219c3a361b4a54e6a11226e04953f0ce690c042465014e8c16e0
     maintainers:
@@ -37,9 +46,9 @@ entries:
     version: 1.0.0
   daemon:
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.087088-07:00"
+    created: "2021-09-14T11:01:55.925726-07:00"
     description: Generalized chart for a daemon
-    digest: 86caccbf1609dd232cc4b8137a49fafdd2d33ec4570919cfe31353711315e0cb
+    digest: 625eae05b8b4c9c73cceab3b3540b83d30fcc1f125f987124015cbf42edde848
     maintainers:
     - email: timfpark@gmail.com
       name: timfpark
@@ -48,7 +57,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/daemon-1.0.4.tgz
     version: 1.0.4
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.086579-07:00"
+    created: "2021-09-14T11:01:55.925139-07:00"
     description: Generalized chart for a daemon
     digest: 0f5794420e0b9e973a139fbdfd399cadfe9c79a14c92813f9b6afb3386a67b00
     maintainers:
@@ -59,7 +68,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/daemon-1.0.3.tgz
     version: 1.0.3
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.084492-07:00"
+    created: "2021-09-14T11:01:55.924851-07:00"
     description: Generalized chart for a daemon
     digest: 9b8b2d69c98ecb83db7eba9416653b6fb1731b93b71d7ad8e93c83650cdb433e
     maintainers:
@@ -70,7 +79,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/daemon-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.082515-07:00"
+    created: "2021-09-14T11:01:55.92456-07:00"
     description: Generalized chart for a daemon
     digest: c90a5565ac1912a73b1ba4bf1dd40673d633e4ff0ddfe121792080f6107180c1
     maintainers:
@@ -82,9 +91,9 @@ entries:
     version: 1.0.0
   external-service:
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.102715-07:00"
+    created: "2021-09-14T11:01:55.928773-07:00"
     description: Generalized chart to expose an external web service
-    digest: ee6a7d199149dfd405b2fdbfb6198d3525287e0fbc2fada04f2cab77ee015952
+    digest: 4f8227dfb630e83f67c40229822c172a841812935b050feb404f3e1b7b12a863
     maintainers:
     - email: timfpark@gmail.com
       name: timfpark
@@ -93,7 +102,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.7.tgz
     version: 1.0.7
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.102177-07:00"
+    created: "2021-09-14T11:01:55.928183-07:00"
     description: Generalized chart to expose an external web service
     digest: 997b7243bc9a7108c8aa402cea761ac5b859dd14efb3183856a65f13c36a530a
     maintainers:
@@ -104,7 +113,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.6.tgz
     version: 1.0.6
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.100115-07:00"
+    created: "2021-09-14T11:01:55.927789-07:00"
     description: Generalized chart to expose an external web service
     digest: 30bee8f05622bf5bbc8bce209b0dd41362860a8d6fe077c73ea96e145d0cdd79
     maintainers:
@@ -115,7 +124,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.5.tgz
     version: 1.0.5
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.097999-07:00"
+    created: "2021-09-14T11:01:55.927374-07:00"
     description: Generalized chart to expose an external web service
     digest: fabd99d2b0cd4f9d611ee4f7b80894a3007c726b96c5a7333d15da296944db9e
     maintainers:
@@ -126,7 +135,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.4.tgz
     version: 1.0.4
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.095795-07:00"
+    created: "2021-09-14T11:01:55.927021-07:00"
     description: Generalized chart to expose an external web service
     digest: 7a2383f96802bc5386af7e0c34d33edd2010561da23e30f74283636373c1342e
     maintainers:
@@ -137,7 +146,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.3.tgz
     version: 1.0.3
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.093697-07:00"
+    created: "2021-09-14T11:01:55.926713-07:00"
     description: Generalized chart to expose an external web service
     digest: 7ae73ec22bfa8cc6666dd9ab97c9f3dfffc014297f4d517c237368fb9e80273f
     maintainers:
@@ -148,7 +157,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.091468-07:00"
+    created: "2021-09-14T11:01:55.926389-07:00"
     description: Generalized chart to expose an external web service
     digest: 293b4a0be9caec4c7324dbe6a444e2d106883cf971e8469ea7b5b9eb7226c31c
     maintainers:
@@ -159,7 +168,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/external-service-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.089159-07:00"
+    created: "2021-09-14T11:01:55.926059-07:00"
     description: Generalized chart to expose an external web service
     digest: 7e55a436a502d1124ebc36392e52a50f292c7431a88f0101eb4716989c0f541c
     maintainers:
@@ -171,9 +180,9 @@ entries:
     version: 1.0.0
   internal-service:
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.105363-07:00"
+    created: "2021-09-14T11:01:55.929679-07:00"
     description: Generalized chart for an internal web service
-    digest: 2dc0d5f500ffd38b80219b998b73ca62cc5fb175e00b41fbc89674053da1bd2f
+    digest: f6d45407a9b42467d71b522b6468982a8ddd17ae8426bf40913e999d0d5e133e
     maintainers:
     - email: timfpark@gmail.com
       name: timfpark
@@ -182,7 +191,7 @@ entries:
     - https://timfpark.github.io/helm-repo/dist/internal-service-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v1
-    created: "2021-09-14T11:00:34.104763-07:00"
+    created: "2021-09-14T11:01:55.929097-07:00"
     description: Generalized chart for an internal web service
     digest: 893f6c208181027c47ed223486d9ed00536ba03fdf12560035ce3ae41a913cac
     maintainers:
@@ -192,16 +201,4 @@ entries:
     urls:
     - https://timfpark.github.io/helm-repo/dist/internal-service-1.0.0.tgz
     version: 1.0.0
-  vault:
-  - apiVersion: v1
-    created: "2021-09-14T11:00:34.107498-07:00"
-    description: Chart to deploy Vault in HA configuration
-    digest: 697e5994755ebeeb5cd3e0142dda54933414105307538cc82161b689df143095
-    maintainers:
-    - email: timfpark@gmail.com
-      name: timfpark
-    name: vault
-    urls:
-    - https://timfpark.github.io/helm-repo/dist/vault-1.0.0.tgz
-    version: 1.0.0
-generated: "2021-09-14T11:00:34.068239-07:00"
+generated: "2021-09-14T11:01:55.921479-07:00"

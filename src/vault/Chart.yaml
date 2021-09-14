@@ -1,6 +1,0 @@
-name: vault
-description: Chart to deploy Vault in HA configuration
-version: 1.0.0
-maintainers:
-    - name: timfpark
-      email: timfpark@gmail.com

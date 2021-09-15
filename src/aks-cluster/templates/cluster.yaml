@@ -23,6 +23,8 @@ metadata:
   name: {{ .Values.name }}
 spec:
   location: {{ .Values.location }}
+  resourceGroupName: {{ .Values.clusterResourceGroup }}
+  nodeResourceGroupName: nodepool-{{ .Values.clusterResourceGroup }}
   sshPublicKey: ""
   subscriptionID: {{ .Values.subscriptionId }}
   version: {{ .Values.k8sVersion }} 

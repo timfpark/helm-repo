@@ -7,7 +7,7 @@ spec:
     services:
       cidrBlocks:
       - {{ .Values.servicesCidrBlock }}
-    serviceDomain: cluster.local  
+    serviceDomain: cluster.local
   controlPlaneRef:
     apiVersion: exp.infrastructure.cluster.x-k8s.io/v1alpha4
     kind: AzureManagedControlPlane
@@ -27,7 +27,7 @@ spec:
   nodeResourceGroupName: nodepool-{{ .Values.clusterResourceGroup }}
   sshPublicKey: ""
   subscriptionID: {{ .Values.subscriptionId }}
-  version: {{ .Values.k8sVersion }} 
+  version: {{ .Values.k8sVersion }}
   networkPlugin: {{ .Values.networkPlugin }}
   networkPolicy: {{ .Values.networkPolicy }}
   virtualNetwork:
@@ -63,9 +63,9 @@ kind: AzureManagedMachinePool
 metadata:
   name: {{ .Values.controlAgentPoolName }}
 spec:
-  sku: {{ .Values.controlAgentPoolNodeSize }}
   mode: System
   osDiskSizeGB: 512
+  sku: {{ .Values.controlAgentPoolNodeSize }}
 ---
 apiVersion: cluster.x-k8s.io/v1alpha4
 kind: MachinePool

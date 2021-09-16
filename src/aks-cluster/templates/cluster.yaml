@@ -90,4 +90,6 @@ kind: AzureManagedMachinePool
 metadata:
   name: {{ .Values.workerAgentPoolName }}
 spec:
+  mode: User
+  osDiskSizeGB: 1024
   sku: {{ .Values.workerAgentPoolNodeSize }}
